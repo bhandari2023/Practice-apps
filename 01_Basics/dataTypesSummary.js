@@ -20,4 +20,4 @@ const myfunction = function(){
     console.log("Hello World Inside function");
       
 }
-console.log(typeof myfunction);
+console.log(typeof myfunction); 
