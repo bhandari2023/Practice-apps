@@ -21,21 +21,21 @@
 
 
 
-// const balance =1000
+const balance =1000
 
-// // if (balance > 50) console.log("test"),console.log("test2");
+// if (balance > 50) console.log("test"),console.log("test2");
 
-// if (balance < 500) {
-//     console.log("less then 500 ");
+if (balance < 500) {
+    console.log("less then 500 ");
   
-// }else if (balance< 750){
-//     console.log("less than 750");
+}else if (balance< 750){
+    console.log("less than 750");
  
-// }else if (balance <900){
-//     console.log("less then 900");
-// }else {
-//     console.log("balance is less than 1200");
-// }
+}else if (balance <900){
+    console.log("less then 900");
+}else {
+    console.log("balance is less than 1200");
+}
 
 
 const userLoggedIn= true
