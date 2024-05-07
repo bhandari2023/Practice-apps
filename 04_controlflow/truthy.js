@@ -19,8 +19,24 @@ if (uemail) { // empty uemail will be considered false empty [] array gives true
 
 // // }
 
-// const emptObj ={}
+const emptObj ={
+    name:"pankaj"
+}
 
-// if(Object.keys(emptObj).length===0){
-//     console.log("object is empty");
-// }
+if(Object.keys(emptObj).length===0){
+    console.log("object is empty");
+}else{
+    console.log("object is not empty "+ `${emptObj.name}`);
+}
+
+//nullish coalescing opertaor for null and undefined 
+
+let val1;
+//val1 =5 ?? 10;
+//val1 = null ?? 10 ;
+
+//val1= undefined ?? 10
+
+val1 = null ?? 10 ?? 20
+
+console.log(val1);
