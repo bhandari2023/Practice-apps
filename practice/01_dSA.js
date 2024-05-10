@@ -146,3 +146,13 @@ function factorial(n) {
 }
 
 console.log(factorial(6));
+
+function reverseWord(str){
+    const stringWord= ''
+    for (let i = stringWord.length-1; i >= 0; i--){
+        stringWord += str[i]
+    }
+    return stringWord;
+}
+const inputString = "Pankaj"
+console.log(reverseWord(inputString))
