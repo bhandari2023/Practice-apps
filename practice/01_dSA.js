@@ -147,12 +147,29 @@ function factorial(n) {
 
 console.log(factorial(6));
 
+
+// FUNCTION TO REVERSE given word
 function reverseWord(str){
-    const stringWord= ''
-    for (let i = stringWord.length-1; i >= 0; i--){
-        stringWord += str[i]
+ let stringWord = '';
+    for (let i = str.length - 1; i >= 0; i--){
+        stringWord += str[i];
     }
     return stringWord;
 }
-const inputString = "Pankaj"
-console.log(reverseWord(inputString))
+let inputString1 = "Pankaj";
+console.log(reverseWord(inputString1))
+
+// function to print numbers from 1 to 10 
+
+for (let i = 0; i<= 10; i++) {
+    console.log(i);
+    
+}
+
+for (let i = 0; i <= 10; i++) {
+if (i%2!==0) {
+    console.log(i);
+    
+}
+    
+}
