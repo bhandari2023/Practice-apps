@@ -109,3 +109,40 @@ function reverseString5(str) {
     
 }
 reverseString5("Bhumika")
+
+// function to check if the given string is palindrome or not 
+
+function pallinString(str) {
+    const reverseString = str.split("").reverse().join("");
+    return str ===reverseString;
+    
+}
+console.log(pallinString("nitin"));
+
+// find maximum element in an Array
+
+function maxNumber(arr) {
+
+    return Math.max(...arr)
+}
+
+console.log(maxNumber([1,2,3,4,5,6,7]));
+
+// find minimum element in an Array 
+function minNumber(arr2){
+    return Math.min(...arr2)
+}
+console.log(minNumber([5,6,7,6,8,9]));
+
+//find Factorial of a number
+
+function factorial(n) {
+    if(n===0||n===1){
+        return 1;
+    } else{
+        return n * factorial(n-1);
+    }
+    
+}
+
+console.log(factorial(6));
