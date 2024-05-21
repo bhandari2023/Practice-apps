@@ -26,13 +26,44 @@
     <script>
       const buttons = document.querySelectorAll(".button");
       const body = document.querySelector("body");
+      //Using forEach 
+      // buttons.forEach(function (button) {
+      //   button.addEventListener("click", function (e) {
+      //     const color = e.target.id;
+      //     body.style  .backgroundColor = color;
+      //   });
+      // });
 
-      buttons.forEach(function (button) {
-        button.addEventListener("click", function (e) {
-          const color = e.target.id;
-          body.style.backgroundColor = color;
-        });
-      });
+
+      // color switcher using if else statement
+
+      // buttons.forEach(function(button){
+      //   button.addEventListener("click", function(e){
+      //     const color =e.target.id;
+      //     if(color==='grey'){
+      //       body.style  .backgroundColor = 'grey';
+      //     }else if (color==='blue'){
+      //       body.style  .backgroundColor = 'blue';
+      //     }else if (color==='orange'){
+      //       body.style  .backgroundColor = 'orange';
+      //     }else if (color==='yellow'){
+      //       body.style  .backgroundColor = 'yellow';
+      //     }else if (color==='red'){
+      //       body.style  .backgroundColor = 'red';
+      //     }else{
+      //       body.style.backgroundColor = 'white';
+      //     }
+      //   })
+      // })
+       
+      for (let i = 0; i < buttons.length; i++) {
+
+        buttons[i].addEventListener('click',function(e){
+          const color=e.target.id
+          body.style.backgroundColor=color;
+        })
+        
+      }
     </script>
   </body>
 </html>
